@@ -1,0 +1,41 @@
+#PixelGamesToDiscord Plugin config file!
+
+#settings
+settings:
+  #plugin prefix
+  #default: "§l§ePGTD §r§7|> §r "
+  prefix: "§l§ePGTD §r§7|> §r "
+
+  #webhook name on discord
+  name: "PixelGamesToDiscord"
+
+  #here are the messages
+  messages:
+    #error message if something went wrong on send use {error} and let the plugin set the error output there
+    error: "§cAn error occurred while sending message to Discord! Error: {error}"
+
+    #syntax of message wich sent at chat event
+    #{rank} will be replaced automatically with ur rank(only pureperms sry)
+    #{user} will be replaced with ur ingame name
+    #{message} will be replaced with ur chat message
+    chat: "MCBE » {rank} » {user} » {message}"
+
+    #syntax of message wich sent by /discord command
+    #{rank} will be replaced automatically with ur rank(only pureperms sry)
+    #{user} will be replaced with ur ingame name
+    #{message} will be replaced with ur chat message
+    direct: "DirectMessage » {rank} » {user} » {message}"
+
+    #syntax of message wich sent by /discord command
+    #{reporter} will be replaced automatically with ur rank(only pureperms sry)
+    #{reported} will be replaced with ur ingame name
+    #{reason} will be replaced with ur chat message
+    report: "NEW Report! The Player {reporter} reported {reported} for {reason}!"
+  #you can add more than just one link!
+  webhooks:
+    - "webhook link 1"
+    - "webhook link 2" #...
+
+  #enable/disable message sending to discord
+  #default: true
+  enabled: true

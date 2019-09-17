@@ -1,0 +1,7 @@
+name: PixelgamesToDiscord
+main: ImNotYourDev\PGToDiscord\PGTD
+version: 1.0
+api: 3.0.0
+
+author: ImNotYourDev
+#This plugin is made for PixelGames and is free to use for everyone!
